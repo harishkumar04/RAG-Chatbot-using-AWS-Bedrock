@@ -4,6 +4,7 @@ This repository documents how I built a **Retrieval-Augmented Generation (RAG)**
 The goal: create a chatbot that can use my own documents stored in **Amazon S3**, retrieve them intelligently with a **vector store**, and then generate natural, context-aware responses using AI models.  
 
 <img width="720" height="395" alt="Screenshot 2025-09-01 at 5 50 42 PM" src="https://github.com/user-attachments/assets/b2912705-a48c-452d-a1dc-bd1f3cca25a5" />
+
 ---
 
 ## 🌍 Step 1: Setting the Region
