@@ -15,8 +15,9 @@ Not every region supports Bedrock models, so this ensures I get the right hardwa
 
 ## 📚 Step 2: Creating the Knowledge Base
 Inside **Amazon Bedrock**, I went to:
-
 **Bedrock → Builder → Knowledge Base**
+
+<img width="601" height="333" alt="Screenshot 2025-10-01 at 10 56 37 PM" src="https://github.com/user-attachments/assets/90a7c967-fdcc-496b-ad82-c05b294b1bda" />
 
 Here’s why I went with a **vector store** instead of traditional keyword search:
 
@@ -29,8 +30,11 @@ A vector store search knows it’s related to *pets* and might also suggest *toy
 
 That’s why vector search is so powerful for RAG — it captures intent, not just words.
 
----
+**Give the knowledge base a name and then a Service role**
 
+<img width="592" height="341" alt="Screenshot 2025-10-01 at 10 57 47 PM" src="https://github.com/user-attachments/assets/08b9c0a7-52ef-42b9-a9ad-c1cadf3c5da1" />
+
+---
 ## 🪣 Step 3: Setting Up the Data Source
 
 ### 3.1 Creating an S3 Bucket
@@ -39,6 +43,7 @@ I created a new bucket and named it:
 ```text
 s3-research-2
 ```
+<img width="600" height="178" alt="Screenshot 2025-10-01 at 10 58 30 PM" src="https://github.com/user-attachments/assets/cc68f890-3456-4e46-9f9e-3b15e4c05c17" />
 
 I kept the encryption and key settings as the defaults.
 
