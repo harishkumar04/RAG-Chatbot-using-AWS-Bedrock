@@ -47,8 +47,13 @@ I kept the encryption and key settings as the defaults.
 Next, I uploaded my files into the bucket:
 **S3 → Open bucket → Upload → Add files**
 
+<img width="839" height="509" alt="Screenshot 2025-09-01 at 3 47 51 PM" src="https://github.com/user-attachments/assets/8d1a7bd5-e14e-4266-b957-51a1d936318f" />
+
+<img width="1247" height="641" alt="Screenshot 2025-09-01 at 4 37 35 PM" src="https://github.com/user-attachments/assets/ecb7f96d-18d6-487b-a55d-1b6c9b628c69" />
+
 This is the raw data my chatbot will eventually pull answers from.
 
+<img width="1186" height="472" alt="Screenshot 2025-09-01 at 5 24 47 PM" src="https://github.com/user-attachments/assets/c8749d81-0d64-45ed-b90d-4f91b3e22b4a" />
 ---
 
 ## 🤖 Step 4: Connecting to AI Models
@@ -81,7 +86,11 @@ Once synced, I tested the knowledge base by selecting a model and asking it ques
 I tried different types of questions:
 
 * Relevant ones → It pulled answers directly from my documents.
+<img width="1167" height="530" alt="Screenshot 2025-09-01 at 5 31 54 PM" src="https://github.com/user-attachments/assets/6b519582-643c-475b-9c6d-2509e63378c7" />
+
 * Irrelevant ones → It politely said the knowledge base had nothing to offer.
+
+<img width="584" height="384" alt="Screenshot 2025-09-01 at 5 29 51 PM" src="https://github.com/user-attachments/assets/2063884d-e25a-4f7c-bc59-1d0e3c59abcc" />
 
 This gave me confidence that the system was both accurate and safe.
 
@@ -92,7 +101,14 @@ This gave me confidence that the system was both accurate and safe.
 I didn’t stop there. To make the chatbot even better, I explored:
 
 * **Custom prompts** → Tailoring the style of responses.
+<img width="555" height="217" alt="Screenshot 2025-09-01 at 5 37 03 PM" src="https://github.com/user-attachments/assets/2809f787-195a-40cb-9566-a2ce69fac179" />
+
+<img width="575" height="657" alt="Screenshot 2025-09-01 at 5 37 09 PM " src="https://github.com/user-attachments/assets/4ceff91d-a58c-4a3d-8398-84eefb24ff25" />
+
 * **Chunk sizes** → Adjusting how the documents are split before embedding.
+
+  <img width="583" height="538" alt="Screenshot 2025-09-01 at 5 36 54 PM" src="https://github.com/user-attachments/assets/0af0ccdf-19b2-41b7-87fa-7deab3d530d7" />
+
 * **Source weights** → Controlling which data sources are prioritized.
 
 These tweaks help generate more precise, human-like answers.
