@@ -101,3 +101,9 @@ Syncing is the process in which the Data stored in the Data source gets poured i
 **If we want to add some more new information then add those data into the S3 bucket and then sync again**
 
 # Step 4 : Using AWS CloudShell to run Terminal commands
+
+Open the CloudShell by clicking on the terminal present in the top.
+
+[AWS CLI Commands](https://docs.aws.amazon.com/cli/latest/)
+
+
