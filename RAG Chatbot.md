@@ -1,7 +1,8 @@
-# 🧩 Building My RAG Chatbot with Amazon Bedrock
+# Building My RAG Chatbot with Amazon Bedrock
 
 This repository documents how I built a **Retrieval-Augmented Generation (RAG)** project using **Amazon Bedrock**.  
-The goal: create a chatbot that can use my own documents stored in **Amazon S3**, retrieve them intelligently with a **vector store**, and then generate natural, context-aware responses using AI models.  
+
+**The goal: create a chatbot that can use my own documents stored in **Amazon S3**, retrieve them intelligently with a **vector store**, and then generate natural, context-aware responses using AI models.**
 
 <img width="720" height="395" alt="Screenshot 2025-09-01 at 5 50 42 PM" src="https://github.com/user-attachments/assets/b2912705-a48c-452d-a1dc-bd1f3cca25a5" />
 
@@ -119,13 +120,5 @@ I didn’t stop there. To make the chatbot even better, I explored:
 These tweaks help generate more precise, human-like answers.
 
 ---
-
-## ✅ Final Thoughts
-
-This project showed me how simple it can be to combine:
-
-* **Amazon S3** for storing my data
-* **Vector stores** for smart retrieval
-* **Amazon Bedrock models** for generating conversational answers
 
 The result: a working **RAG chatbot** that feels intelligent and context-aware.
