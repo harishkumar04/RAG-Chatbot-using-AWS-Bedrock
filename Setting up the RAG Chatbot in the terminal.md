@@ -104,6 +104,57 @@ Syncing is the process in which the Data stored in the Data source gets poured i
 
 Open the CloudShell by clicking on the terminal present in the top.
 
-[AWS CLI Commands](https://docs.aws.amazon.com/cli/latest/)
+We will use the Retrieve and Generate command which can be found here, [AWS CLI Commands](https://docs.aws.amazon.com/cli/latest/)
 
+**Make sure to copy the knowledge base id and then paste it below in the code and also we need to find the model arn and paste it here which is done below**
 
+```bash
+aws bedrock-agent-runtime retrieve-and-generate \
+  --input '{"text": "What is SDN"}' \
+  --retrieve-and-generate-configuration '{
+    "knowledgeBaseConfiguration": {
+      "knowledgeBaseId": "<<ENTER-THE-KNOWLEDGE-ID>>",
+      "modelArn": "your_model_arn"
+    },
+    "type": "KNOWLEDGE_BASE"
+  }'
+```
+
+## Knowledge Base ID
+
+It is easy to find just go on to the Knowledge base and then there will be a ID copy it and then paste it here.
+
+## Model ARN
+
+In AWS, a Model ARN is the **Amazon Resource Name (ARN)** that uniquely identifies a machine learning model.
+
+We can list out all the Foundation Models present in the Amazon Bedrock by this command below,
+
+```bash
+aws bedrock list-foundation-models
+```
+or since we already know the name of the foundation model that we can first find the model ID.
+
+```bash
+aws bedrock get-foundation-model --model.identifier <<MODEL ID>>
+```
+
+So go to , BedRock console -> Foundation Model -> Model Catalog -> Llama 3.3 70B Instruct 
+
+There we can see the model ID as this
+
+```text
+meta.llama3-3-70b-instruct-v1:0
+```
+
+Then paste it,
+
+```bash
+aws bedrock get-foundation-model --model.identifier meta.llama3-3-70b-instruct-v1:0
+```
+
+After running it in the CloudShell we got the ARN of the Llama Model.
+
+```bash
+
+```
