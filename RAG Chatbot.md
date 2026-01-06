@@ -60,6 +60,7 @@ Next, I uploaded my files into the bucket:
 This is the raw data my chatbot will eventually pull answers from.
 
 <img width="1186" height="472" alt="Screenshot 2025-09-01 at 5 24 47 PM" src="https://github.com/user-attachments/assets/c8749d81-0d64-45ed-b90d-4f91b3e22b4a" />
+
 ---
 
 ## 🤖 Step 4: Connecting to AI Models
