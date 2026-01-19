@@ -8,13 +8,13 @@ This repository documents how I built a **Retrieval-Augmented Generation (RAG)**
 
 ---
 
-## 🌍 Step 1: Setting the Region
+## Step 1: Setting the Region
 I started by switching my AWS region to **Ohio (`us-east-2`)**.  
 Not every region supports Bedrock models, so this ensures I get the right hardware and AI access.
 
 ---
 
-## 📚 Step 2: Creating the Knowledge Base
+## Step 2: Creating the Knowledge Base
 Inside **Amazon Bedrock**, I went to:
 **Bedrock → Builder → Knowledge Base**
 
@@ -36,7 +36,7 @@ That’s why vector search is so powerful for RAG — it captures intent, not ju
 <img width="592" height="341" alt="Screenshot 2025-10-01 at 10 57 47 PM" src="https://github.com/user-attachments/assets/08b9c0a7-52ef-42b9-a9ad-c1cadf3c5da1" />
 
 ---
-## 🪣 Step 3: Setting Up the Data Source
+## Step 3: Setting Up the Data Source
 
 ### 3.1 Creating an S3 Bucket
 I created a new bucket and named it:
@@ -77,7 +77,7 @@ That gave my chatbot the brainpower to interpret and respond to queries.
 
 ---
 
-## 🔄 Step 5: Syncing Data
+## Step 5: Syncing Data
 
 At this point, my knowledge base existed but was empty.
 To load my S3 data into **OpenSearch Serverless (vector store)**, I synced the data:
@@ -88,7 +88,7 @@ Once synced, I tested the knowledge base by selecting a model and asking it ques
 
 ---
 
-## 💬 Step 6: Testing the Chatbot
+## Step 6: Testing the Chatbot
 
 I tried different types of questions:
 
@@ -103,7 +103,7 @@ This gave me confidence that the system was both accurate and safe.
 
 ---
 
-## 🎯 Step 7: Improving the Responses
+## Step 7: Improving the Responses
 
 I didn’t stop there. To make the chatbot even better, I explored:
 
